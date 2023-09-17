@@ -1,0 +1,18 @@
+nfsserver ansible_host=172.31.87.224 ansible_ssh_user=ec2-user ansible_ssh_private_key_file=onoky-ec2.pem
+WEB1 ansible_host=172.31.81.238 ansible_ssh_user=ec2-user ansible_ssh_private_key_file=onoky-ec2.pem
+WEB2 ansible_host=172.31.91.134 ansible_ssh_user=ec2-user ansible_ssh_private_key_file=onoky-ec2.pem
+DataB ansible_host=172.31.95.206 ansible_ssh_user=ec2-user ansible_ssh_private_key_file=onoky-ec2.pem
+LoadB ansible_host=172.31.83.60 ansible_ssh_user=ubuntu ansible_ssh_private_key_file=onoky-ec2.pem
+
+[NFS]
+172.31.87.224 ansible_ssh_user='ec2-user'
+
+[WEB]
+172.31.81.238 ansible_ssh_user='ec2-user'
+172.31.91.134 ansible_ssh_user='ec2-user'
+
+[DB]
+172.31.95.206 ansible_ssh_user='ec2-user'
+
+[LB]
+172.31.83.60 ansible_ssh_user='ubuntu'
