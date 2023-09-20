@@ -1,6 +1,4 @@
 ---
-# tasks file for webserver
----
 - name: install apache
   yum:
     name: "httpd"
