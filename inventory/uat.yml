@@ -1,0 +1,3 @@
+[UATWEB]
+172.31.44.163 ansible_ssh_user='ec2-user'
+172.31.42.157 ansible_ssh_user='ec2-user'
