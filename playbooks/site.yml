@@ -7,7 +7,6 @@
 
 - hosts: all
 - name: Include dynamic variables 
-  tasks:
   import_playbook: ../static-assignment/common.yml 
   include: ../dynamic-assignments/env-vars.yml
   tags:
@@ -19,4 +18,4 @@
 
 - name: Loadbalancers assignment
 - import_playbook: ../static-assignment/loadbalancers.yml
-    when: load_balancer_is_required 
+  when: load_balancer_is_required 
