@@ -60,10 +60,11 @@ apache_restart_state: restarted
 # if you want to upgrade or switch versions using a new repo.
 apache_packages_state: present
 
-# deafault file for apache
+# default file for apache
 enable_apache_lb: false
 load_balancer_is_required: false
 
-# ip mapping web1 and web2
-web1: 172.31.41.85
-web2: 172.31.37.3
+# Webservers
+loadbalancer_name: "myapp1"
+web1: "172.31.41.85 weight=3"
+web2: "172.31.37.3 weight=3"
