@@ -12,7 +12,7 @@
   tags:
     - always
 
-- hosts: webservers
+- hosts: web
 - name: Webserver assignment
   import_playbook: ../static-assignment/webservers.yml
 
